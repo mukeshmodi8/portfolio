@@ -45,12 +45,12 @@ const Resume = () => {
       title: "Portfolio Website",
       imgUrl: "",
       liveLink: "https://your-portfolio-link.com",
-      githubLink: "https://github.com/yourusername/portfolio",
+      githubLink: "https://github.com/mukeshmodi8/crud-app",
     },
     {
       title: "CRUD App",
       imgUrl: "/crud.png",
-      liveLink: "https://crud-app-demo.com",
+      liveLink: "https://crud-app-iota-ivory.vercel.app/",
       githubLink: "https://github.com/yourusername/crud-app",
     },
     {
