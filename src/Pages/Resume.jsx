@@ -54,8 +54,8 @@ const Resume = () => {
       githubLink: "https://github.com/yourusername/crud-app",
     },
     {
-      title: "Weather App",
-      imgUrl: "/images/weather-app.png",
+      title: "Ecomerce Website",
+      imgUrl: "/ecommerce.png",
       liveLink: "https://weatherapp-demo.com",
       githubLink: "https://github.com/yourusername/weather-app",
     },
