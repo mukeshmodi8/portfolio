@@ -56,8 +56,8 @@ const Resume = () => {
     {
       title: "Ecomerce Website",
       imgUrl: "/ecommerce.png",
-      liveLink: "https://weatherapp-demo.com",
-      githubLink: "https://github.com/yourusername/weather-app",
+      liveLink: "https://ecomerce-a82i.vercel.app/",
+      githubLink: "https://github.com/mukeshmodi8/ecomerce.git",
     },
   ];
   
