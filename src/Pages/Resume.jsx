@@ -38,7 +38,7 @@ const Resume = () => {
     { icon: <FaDatabase color="#764abc" />, label: "Redux Toolkit" },
     { icon: <FaGitAlt color="#f34f29" />, label: "Git" },
   ];
- 
+
   const crud = "/crud.png";
   const projects = [
     {
@@ -60,7 +60,7 @@ const Resume = () => {
       githubLink: "https://github.com/mukeshmodi8/ecomerce.git",
     },
   ];
-  
+
 
 
   return (
@@ -454,22 +454,25 @@ const Resume = () => {
       {/* About */}
       <section id="about" className="container py-5">
         <h2 className="text-center mb-4 text-info">About Me</h2>
-        <div className="row align-items-center">
-          <div className="col-md-6 mb-4 text-md-start text-center">
-            <div className="about-img-wrapper">
-              <img src={myPhoto} alt="Mukesh Modi" />
-            </div>
-          </div>
-          <div className="col-md-6">
-            <p style={{ fontSize: "1.1rem", lineHeight: "2.2" }}>
-              Hello! I'm <strong>Mukesh Modi</strong>, a dedicated and creative Frontend Developer from <strong>Banaskantha</strong>. I specialize in crafting responsive, modern, and user-friendly web applications using technologies like <strong>JavaScript</strong>, <strong>React.js</strong>, <strong>Redux Toolkit</strong>, <strong>Bootstrap</strong>, <strong>Tailwind CSS</strong>, <strong>SASS</strong>, <strong>jQuery</strong>, and <strong>Media Query</strong>.
-              <br /><br />
-              I'm currently pursuing Frontend Development at <strong>Red & White Multimedia Education, Ahmedabad</strong>, and I hold a <strong>Bachelor of Arts</strong> degree from <strong>Hemchandracharya North Gujarat University</strong>.
-              <br /><br />
-              I enjoy transforming ideas into beautiful and interactive websites. Let's build something amazing together!
-            </p>
-          </div>
+        {/* <div className="row align-items-center"> */}
+        {/* <div className="col-md-6 text-center"> */}
+        <p style={{ fontSize: "1.1rem", lineHeight: "2.2 text-center" }}>
+          Hello! I'm <strong>Mukesh Modi</strong>, a dedicated and creative Frontend Developer from <strong>Banaskantha</strong>. I specialize in crafting responsive, modern, and user-friendly web applications using technologies like <strong>JavaScript</strong>, <strong>React.js</strong>, <strong>Redux Toolkit</strong>, <strong>Bootstrap</strong>, <strong>Tailwind CSS</strong>, <strong>SASS</strong>, <strong>jQuery</strong>, and <strong>Media Query</strong>.
+          <br /><br />
+          I'm currently pursuing Frontend Development at <strong>Red & White Multimedia Education, Ahmedabad</strong>, and I hold a <strong>Bachelor of Arts</strong> degree from <strong>Hemchandracharya North Gujarat University</strong>.
+          <br /><br />
+          I enjoy transforming ideas into beautiful and interactive websites. Let's build something amazing together!
+        </p>
+        <div>
+          <h1 className="text-center my-5 text-info">My Goal </h1>
         </div>
+        <div>
+          <p>
+            My goal is to become a highly skilled Frontend Developer who can build user-friendly, efficient, and attractive web applications. In the long term, I aim to grow into a Full Stack Developer and contribute to solving real-world problems through technology.
+          </p>
+        </div>
+        {/* </div> */}
+        {/* </div> */}
       </section>
 
       <section id="resume" className="resume-section">
@@ -516,41 +519,41 @@ const Resume = () => {
 
       {/* Projects */}
       <section className="bg-dark text-white py-5">
-      <div className="container">
-        <h2 className="text-center mb-5 fw-bold text-light glow-text">🚀 My Projects</h2>
-        <div className="row g-4">
-          {projects.map((project, index) => (
-            <div className="col-md-6 col-lg-4" key={index}>
-              <div className="project-card bg-secondary position-relative">
-                {/* <img src={crud} alt="local" /> */}
-                <img src={project.imgUrl} className="w-100" alt={project.title} />
-                <div className="project-overlay d-flex flex-column justify-content-center align-items-center text-center px-3">
-                  <div className="project-title mb-3">{project.title}</div>
-                  <div className="d-flex gap-3">
-                    <a
-                      href={project.liveLink}
-                      className="btn btn-primary project-btn"
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      Live
-                    </a>
-                    <a
-                      href={project.githubLink}
-                      className="btn btn-outline-light project-btn"
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      GitHub
-                    </a>
+        <div className="container">
+          <h2 className="text-center mb-5 fw-bold text-light glow-text">🚀 My Projects</h2>
+          <div className="row g-4">
+            {projects.map((project, index) => (
+              <div className="col-md-6 col-lg-4" key={index}>
+                <div className="project-card bg-secondary position-relative">
+                  {/* <img src={crud} alt="local" /> */}
+                  <img src={project.imgUrl} className="w-100" alt={project.title} />
+                  <div className="project-overlay d-flex flex-column justify-content-center align-items-center text-center px-3">
+                    <div className="project-title mb-3">{project.title}</div>
+                    <div className="d-flex gap-3">
+                      <a
+                        href={project.liveLink}
+                        className="btn btn-primary project-btn"
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        Live
+                      </a>
+                      <a
+                        href={project.githubLink}
+                        className="btn btn-outline-light project-btn"
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        GitHub
+                      </a>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
 
 
 
@@ -595,7 +598,7 @@ const Resume = () => {
 
       {/* Footer */}
       <footer className="text-center py-3 mt-5">
-        <p className="mb-0 text-white-50">© 2025 Mr. Happy 😎 | All Rights Reserved</p>
+        <p className="mb-0 text-white-50">© 2025 Copyright | All Rights Reserved</p>
       </footer>
 
     </>
