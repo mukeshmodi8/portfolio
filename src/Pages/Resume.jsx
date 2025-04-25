@@ -444,7 +444,7 @@ const Resume = () => {
           <img src={myPhoto} alt="Mukesh Modi" />
         </div>
         <h1 className="glow-text">Hi, I'm Mukesh Modi</h1>
-        <p className="devloper mt-3 fs-4 text-white-50 ">Frontend Developer | React.js | Redux Toolkit</p>
+        <p className="devloper mt-3 fs-4 text-white-50 ">Frontend Developer |Javascript | React.js |Redux| Redux Toolkit</p>
         <div className="d-flex justify-content-center gap-3 mt-4">
           <Link to="projects" smooth duration={500} className="btn btn-custom px-4">Projects</Link>
           <Link to="contact" smooth duration={500} className="btn btn-outline-light px-4">Contact</Link>
