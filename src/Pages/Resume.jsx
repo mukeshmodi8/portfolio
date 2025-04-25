@@ -444,7 +444,7 @@ const Resume = () => {
           <img src={myPhoto} alt="Mukesh Modi" />
         </div>
         <h1 className="glow-text">Hi, I'm Mukesh Modi</h1>
-        <p className="devloper mt-3 fs-4 text-white-50 ">Frontend Developer |Javascript | React.js |Redux| Redux Toolkit</p>
+        <p className="devloper mt-3 fs-4 text-white-50 ">Frontend Developer |Javascript | React.js |Redux| Redux Toolkit Thunk</p>
         <div className="d-flex justify-content-center gap-3 mt-4">
           <Link to="projects" smooth duration={500} className="btn btn-custom px-4">Projects</Link>
           <Link to="contact" smooth duration={500} className="btn btn-outline-light px-4">Contact</Link>
@@ -463,14 +463,14 @@ const Resume = () => {
           <br /><br />
           I enjoy transforming ideas into beautiful and interactive websites. Let's build something amazing together!
         </p>
-        <div>
+        {/* <div>
           <h1 className="text-center my-5 text-info">My Goal </h1>
         </div>
         <div>
           <p>
             My goal is to become a highly skilled Frontend Developer who can build user-friendly, efficient, and attractive web applications. In the long term, I aim to grow into a Full Stack Developer and contribute to solving real-world problems through technology.
           </p>
-        </div>
+        </div> */}
         {/* </div> */}
         {/* </div> */}
       </section>
