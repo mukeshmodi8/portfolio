@@ -41,10 +41,17 @@ const Resume = () => {
 
   const crud = "/crud.png";
   const projects = [
+    
     {
-      title: "Portfolio Website",
-      imgUrl: "",
-      liveLink: "https://your-portfolio-link.com",
+      title: "Expense Tracker",
+      imgUrl: "/Expense Tracker.png",
+      liveLink: "https://expense-tracker-pearl-tau-59.vercel.app/",
+      githubLink: "https://github.com/mukeshmodi8/crud-app",
+    },
+    {
+      title: "blog Website",
+      imgUrl: "/blog.png",
+      liveLink: "https://nwese-blog-ncmd.vercel.app/",
       githubLink: "https://github.com/mukeshmodi8/crud-app",
     },
     {
