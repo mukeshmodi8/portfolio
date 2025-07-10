@@ -488,7 +488,7 @@ const Resume = () => {
 
         <div className="resume-buttons">
           <a
-            href="/Blue Simple Professional CV Resume.pdf"
+            href="/mern resume (4).pdf"
             target="_blank"
             rel="noopener noreferrer"
             className="resume-button"
@@ -497,7 +497,7 @@ const Resume = () => {
           </a>
 
           <a
-            href="/Blue Simple Professional CV Resume.pdf"
+            href="/mern resume (4).pdf"
             download
             className="resume-button"
           >
