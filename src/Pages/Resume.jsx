@@ -57,7 +57,7 @@ const Resume = () => {
     {
       title: "blog Website",
       imgUrl: "/blog.png",
-      liveLink: "https://nwese-blog-ncmd.vercel.app/",
+      liveLink: "https://happyblogg.com/",
       githubLink: "https://github.com/mukeshmodi8/crud-app",
     },
     {
