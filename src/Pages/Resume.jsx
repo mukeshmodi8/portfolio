@@ -46,7 +46,7 @@ const Resume = () => {
       title: "Ecomerce Website - Alakh Fashion",
       imgUrl: "/alakh fashion.jpg",
       liveLink: "https://alakh-fashion.vercel.app/",
-      githubLink: "https://github.com/mukeshmodi8/crud-app",
+      githubLink: "https://github.com/mukeshmodi8/alakh-fashion",
     },
     {
       title: "Expense Tracker",
