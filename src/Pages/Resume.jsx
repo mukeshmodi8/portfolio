@@ -42,6 +42,12 @@ const Resume = () => {
   const crud = "/crud.png";
   const projects = [
     
+     {
+      title: "Ecomerce Website - Alakh Fashion",
+      imgUrl: "/alakh fashion.jpg",
+      liveLink: "https://alakh-fashion.vercel.app/",
+      githubLink: "https://github.com/mukeshmodi8/crud-app",
+    },
     {
       title: "Expense Tracker",
       imgUrl: "/Expense Tracker.png",
