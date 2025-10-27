@@ -41,8 +41,8 @@ const Resume = () => {
 
   const crud = "/crud.png";
   const projects = [
-    
-     {
+
+    {
       title: "Ecomerce Website - Alakh Fashion",
       imgUrl: "/alakh fashion.jpg",
       liveLink: "https://alakh-fashion.vercel.app/",
@@ -487,6 +487,74 @@ const Resume = () => {
         {/* </div> */}
         {/* </div> */}
       </section>
+
+      {/* Work Experience / Current Company Section */}
+      <section id="experience" className="container py-5 text-center">
+        <h2 className="text-info mb-4">Currently Working</h2>
+
+        <div
+          className="p-4 mx-auto"
+          style={{
+            background: "linear-gradient(135deg, #1f1f2e 0%, #2b2b3d 100%)",
+            borderRadius: "15px",
+            maxWidth: "800px",
+            boxShadow: "0 0 25px rgba(76, 201, 240, 0.3)",
+            transition: "transform 0.3s ease",
+          }}
+        >
+          <h3 className="fw-bold text-light mb-3">
+            💼 Baadam Info & Tradelink Services Pvt Ltd
+          </h3>
+
+          <p className="text-white-50 mb-2 fs-5">
+            <strong className="text-white">Role : </strong> Web Developer
+          </p>
+
+          <p className="text-white-50 mb-2 fs-5">
+            <strong className="text-white">Technologies : </strong> React.js, Redux Toolkit, JavaScript, Node.js, Express, MongoDB, Bootstrap, Tailwind, API Integration
+          </p>
+
+          <p className="text-white-50 mb-0 fs-5">
+            <strong className="text-white">Location : </strong> Ahmedabad, Gujarat, India
+          </p>
+
+          <p className="mt-3 text-info">
+            🕒 Working since: October 2025 – Present
+          </p>
+
+          {/* Product Specifications Section */}
+          <div
+            className="mt-5 p-4 text-start text-white"
+            style={{
+              background: "rgba(255, 255, 255, 0.05)",
+              borderRadius: "15px",
+              boxShadow: "0 0 15px rgba(76, 201, 240, 0.2)",
+            }}
+          >
+            <h4 className="text-info mb-3 text-center">Project Specifications</h4>
+            <div className="d-flex flex-column flex-md-row align-items-center gap-4">
+              {/* Image */}
+              {/* <img
+          src="https://example.com/project-image.jpg"
+          alt="Project"
+          className="img-fluid rounded-4 shadow-lg"
+          style={{ maxWidth: "280px", border: "4px solid #00c6ff" }}
+        /> */}
+
+              {/* Details */}
+              <ul className="list-unstyled fs-5 text-white-50 mt-3 mt-md-0">
+                <li><strong className="text-white">Frontend : </strong> React.js, Redux Toolkit</li>
+                <li><strong className="text-white">Backend : </strong> Node.js, Express, MongoDB</li>
+                <li><strong className="text-white">Design : </strong> Tailwind CSS, Bootstrap, Custom Animations</li>
+                <li><strong className="text-white">Features : </strong> Search, Filters, Cart System, Payment Integration</li>
+                <li><strong className="text-white">Hosting : </strong> Vercel (Frontend) & Render (Backend)</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
 
       <section id="resume" className="resume-section">
         <h2 className="section-title">Resume</h2>
