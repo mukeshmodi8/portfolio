@@ -1,6 +1,7 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-import { Link } from "react-scroll";
+import { Link, Link as RouterLink } from "react-router-dom";
+import { Link as ScrollLink } from "react-scroll";
 import {
   FaHtml5,
   FaCss3Alt,
@@ -18,7 +19,6 @@ import {
 // import {  FaCss3Alt } from "react-icons/fa";
 import { SiJquery, SiTailwindcss } from "react-icons/si";
 import { MdDevices } from "react-icons/md";
-
 
 
 const myPhoto = "/mukesh.jpg";
@@ -73,6 +73,7 @@ const Resume = () => {
       githubLink: "https://github.com/mukeshmodi8/ecomerce.git",
     },
   ];
+  const featuredProjects = projects.slice(0, 3);
 
 
 
@@ -459,9 +460,27 @@ const Resume = () => {
         <h1 className="glow-text">Hi, I'm Mukesh Modi</h1>
         <p className="devloper mt-3 fs-4 text-white-50 ">Frontend Developer |Javascript | React.js |Redux| Redux Toolkit Thunk</p>
         <div className="d-flex justify-content-center gap-3 mt-4">
-          <Link to="projects" smooth duration={500} className="btn btn-custom px-4">Projects</Link>
-          <Link to="contact" smooth duration={500} className="btn btn-outline-light px-4">Contact</Link>
+
+          {/* GO TO PROJECTS PAGE */}
+          <RouterLink
+            to="/projects"
+            className="btn btn-custom px-4"
+          >
+            Projects
+          </RouterLink>
+
+          {/* SCROLL TO CONTACT SECTION */}
+          <ScrollLink
+            to="contact"
+            smooth
+            duration={500}
+            className="btn btn-outline-light px-4"
+          >
+            Contact
+          </ScrollLink>
+
         </div>
+
       </section>
 
       {/* About */}
@@ -472,7 +491,12 @@ const Resume = () => {
         <p style={{ fontSize: "1.1rem", lineHeight: "2.2 text-center" }}>
           Hello! I'm <strong>Mukesh Modi</strong>, a dedicated and creative Frontend Developer from <strong>Banaskantha</strong>. I specialize in crafting responsive, modern, and user-friendly web applications using technologies like <strong>JavaScript</strong>, <strong>React.js</strong>, <strong>Redux Toolkit</strong>, <strong>Bootstrap</strong>, <strong>Tailwind CSS</strong>, <strong>SASS</strong>, <strong>jQuery</strong>, and <strong>Media Query</strong>.
           <br /><br />
-          I'm currently pursuing Frontend Development at <strong>Red & White Multimedia Education, Ahmedabad</strong>, and I hold a <strong>Bachelor of Arts</strong> degree from <strong>Hemchandracharya North Gujarat University</strong>.
+          I'm a Frontend Developer who has successfully completed
+          Frontend Development training from
+          <strong>Red & White Multimedia Education, Ahmedabad</strong>.
+          During my training, I gained strong hands-on experience in
+          <strong>HTML, CSS, JavaScript, React.js, Redux Toolkit, Bootstrap, Tailwind CSS, SASS</strong>
+          and modern responsive UI development.
           <br /><br />
           I enjoy transforming ideas into beautiful and interactive websites. Let's build something amazing together!
         </p>
@@ -511,7 +535,7 @@ const Resume = () => {
           </p>
 
           <p className="text-white-50 mb-2 fs-5">
-            <strong className="text-white">Technologies : </strong> React.js, Redux Toolkit, JavaScript, Node.js, Express, MongoDB, Bootstrap, Tailwind, API Integration
+            <strong className="text-white">Technologies : </strong> React.js, Redux Toolkit, JavaScript, , Bootstrap, Tailwind, API Integration
           </p>
 
           <p className="text-white-50 mb-0 fs-5">
@@ -519,8 +543,9 @@ const Resume = () => {
           </p>
 
           <p className="mt-3 text-info">
-            🕒 Working since: October 2025 – Present
+            🕒 Working since: April 2025 – Present
           </p>
+
 
           {/* Product Specifications Section */}
           <div
@@ -544,7 +569,7 @@ const Resume = () => {
               {/* Details */}
               <ul className="list-unstyled fs-5 text-white-50 mt-3 mt-md-0">
                 <li><strong className="text-white">Frontend : </strong> React.js, Redux Toolkit</li>
-                <li><strong className="text-white">Backend : </strong> Node.js, Express, MongoDB</li>
+                <li><strong className="text-white">Backend : </strong> MongoDB</li>
                 <li><strong className="text-white">Design : </strong> Tailwind CSS, Bootstrap, Custom Animations</li>
                 <li><strong className="text-white">Features : </strong> Search, Filters, Cart System, Payment Integration</li>
                 <li><strong className="text-white">Hosting : </strong> Vercel (Frontend) & Render (Backend)</li>
@@ -601,40 +626,35 @@ const Resume = () => {
       {/* Projects */}
       <section className="bg-dark text-white py-5">
         <div className="container">
-          <h2 className="text-center mb-5 fw-bold text-light glow-text">🚀 My Projects</h2>
+          <h2 className="text-center mb-5 fw-bold">🚀 Featured Projects</h2>
+
           <div className="row g-4">
-            {projects.map((project, index) => (
-              <div className="col-md-6 col-lg-4" key={index}>
-                <div className="project-card bg-secondary position-relative">
-                  {/* <img src={crud} alt="local" /> */}
-                  <img src={project.imgUrl} className="w-100" alt={project.title} />
-                  <div className="project-overlay d-flex flex-column justify-content-center align-items-center text-center px-3">
-                    <div className="project-title mb-3">{project.title}</div>
-                    <div className="d-flex gap-3">
-                      <a
-                        href={project.liveLink}
-                        className="btn btn-primary project-btn"
-                        target="_blank"
-                        rel="noreferrer"
-                      >
-                        Live
-                      </a>
-                      <a
-                        href={project.githubLink}
-                        className="btn btn-outline-light project-btn"
-                        target="_blank"
-                        rel="noreferrer"
-                      >
-                        GitHub
-                      </a>
-                    </div>
-                  </div>
+            {featuredProjects.map((project, index) => (
+              <div className="col-md-4" key={index}>
+                <div className="project-card bg-secondary">
+                  <img
+                    src={project.imgUrl}
+                    className="w-100"
+                    alt={project.title}
+                  />
                 </div>
               </div>
             ))}
           </div>
+
+          {/* View All */}
+          <div className="text-center mt-5">
+            <Link
+              to="/projects"
+              className="btn btn-outline-info px-5 py-2"
+            >
+              View All Projects →
+            </Link>
+          </div>
         </div>
       </section>
+
+
 
 
 
