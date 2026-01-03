@@ -16,6 +16,7 @@ import {
   FaMapMarkerAlt,
   FaSass,
 } from "react-icons/fa";
+import { SiMongodb } from "react-icons/si";
 // import {  FaCss3Alt } from "react-icons/fa";
 import { SiJquery, SiTailwindcss } from "react-icons/si";
 import { MdDevices } from "react-icons/md";
@@ -36,11 +37,18 @@ const Resume = () => {
     { icon: <FaJs color="#F0DB4F" />, label: "JavaScript" },
     { icon: <FaReact color="#61DBFB" />, label: "React.js" },
     { icon: <FaDatabase color="#764abc" />, label: "Redux Toolkit" },
+    { icon: <SiMongodb color="#47A248" />, label: "MongoDB" },
     { icon: <FaGitAlt color="#f34f29" />, label: "Git" },
   ];
 
   const crud = "/crud.png";
   const projects = [
+     {
+      title: "Apexx Epoxy Pros Ltd. Website",
+      imgUrl: "/Apexx.png",
+      liveLink: "https://baadam-info.vercel.app/",
+      githubLink: "https://github.com/mukeshmodi8/baadam-info",
+    },
 
     {
       title: "Ecomerce Website - Alakh Fashion",
@@ -48,18 +56,19 @@ const Resume = () => {
       liveLink: "https://alakh-fashion.vercel.app/",
       githubLink: "https://github.com/mukeshmodi8/alakh-fashion",
     },
+     {
+      title: "blog Website",
+      imgUrl: "/blog.png",
+      liveLink: "https://happyblogg.com/",
+      githubLink: "https://github.com/mukeshmodi8/crud-app",
+    },
     {
       title: "Expense Tracker",
       imgUrl: "/Expense Tracker.png",
       liveLink: "https://expense-tracker-pearl-tau-59.vercel.app/",
       githubLink: "https://github.com/mukeshmodi8/crud-app",
     },
-    {
-      title: "blog Website",
-      imgUrl: "/blog.png",
-      liveLink: "https://happyblogg.com/",
-      githubLink: "https://github.com/mukeshmodi8/crud-app",
-    },
+   
     {
       title: "CRUD App",
       imgUrl: "/crud.png",
@@ -514,7 +523,7 @@ const Resume = () => {
 
       {/* Work Experience / Current Company Section */}
       <section id="experience" className="container py-5 text-center">
-        <h2 className="text-info mb-4">Currently Working</h2>
+        <h2 className="text-info mb-4">Currently Working 💼 </h2>
 
         <div
           className="p-4 mx-auto"
@@ -609,7 +618,7 @@ const Resume = () => {
       {/* Skills */}
       <section id="skills" className="skills-section container">
         <h2 className="text-center text-info mb-5">Skills</h2>
-        <div className="row g-4">
+        <div className="row g-4"> 
           {skills.map((skill, index) => (
             <div key={index} className="col-6 col-md-4 col-lg-3">
               <div className="skill-card bounce-hover">

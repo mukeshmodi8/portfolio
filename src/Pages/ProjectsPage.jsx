@@ -9,30 +9,38 @@ const ProjectsPage = () => {
       liveLink: "https://alakh-fashion.vercel.app/",
       githubLink: "https://github.com/mukeshmodi8/alakh-fashion",
     },
+     {
+      title: "Apexx Epoxy Pros Ltd. Website",
+      imgUrl: "/Apexx.png",
+      liveLink: "https://baadam-info.vercel.app/",
+      githubLink: "https://github.com/mukeshmodi8/baadam-info",
+    },
+     {
+      title: "Blog Website",
+      imgUrl: "/blog.png",
+      liveLink: "https://happyblogg.com/",
+      githubLink: "https://github.com/mukeshmodi8/crud-app",
+    },
+     {
+      title: "Ecomerce Website",
+      imgUrl: "/ecommerce.png",
+      liveLink: "https://ecomerce-a82i.vercel.app/",
+      githubLink: "https://github.com/mukeshmodi8/ecomerce.git",
+    },
     {
       title: "Expense Tracker",
       imgUrl: "/Expense Tracker.png",
       liveLink: "https://expense-tracker-pearl-tau-59.vercel.app/",
       githubLink: "https://github.com/mukeshmodi8/crud-app",
     },
-    {
-      title: "Blog Website",
-      imgUrl: "/blog.png",
-      liveLink: "https://happyblogg.com/",
-      githubLink: "https://github.com/mukeshmodi8/crud-app",
-    },
+   
     {
       title: "CRUD App",
       imgUrl: "/crud.png",
       liveLink: "https://crud-app-iota-ivory.vercel.app/",
       githubLink: "https://github.com/mukeshmodi8/crud-app",
     },
-    {
-      title: "Ecomerce Website",
-      imgUrl: "/ecommerce.png",
-      liveLink: "https://ecomerce-a82i.vercel.app/",
-      githubLink: "https://github.com/mukeshmodi8/ecomerce.git",
-    },
+   
   ];
 
   return (
